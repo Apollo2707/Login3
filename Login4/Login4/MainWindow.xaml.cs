@@ -18,9 +18,11 @@ namespace Login4
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
     public partial class MainWindow : Window
     {
         private Button[] arrButtons = new Button[9];
+        private int intTurn = 0;
         
         // buttons are ordered from 0 as topleft to 8 as buttom right
         public MainWindow()
@@ -29,16 +31,17 @@ namespace Login4
         }
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            int turn = 0;
-            if (turn == 0)
+            Button btnThisButton = (Button)sender;
+            btnThisButton.Content = "x";
+            if (intTurn == 0)
             {
-                buttonTL.Content = "X";
-                turn = 1;
+                btnThisButton.Content = "X";
+                intTurn = 1;
             }
             else
             {
-                buttonTR.Content = "O";
-                turn = 0;
+                btnThisButton.Content = "O";
+                intTurn = 0;
             }
 
 
