@@ -30,6 +30,7 @@ namespace Login4
         {
             label.Content = "I have been clicked!" + counter.ToString();
             counter++;
+            counter++;
         }
     }
 }
