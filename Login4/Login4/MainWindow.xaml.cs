@@ -21,6 +21,7 @@ namespace Login4
     public partial class MainWindow : Window
     {
         private Button[] arrButtons = new Button[9];
+        
         // buttons are ordered from 0 as topleft to 8 as buttom right
         public MainWindow()
         {
@@ -31,12 +32,12 @@ namespace Login4
             int turn = 0;
             if (turn == 0)
             {
-                button.Content = "X";
+                buttonTL.Content = "X";
                 turn = 1;
             }
             else
             {
-                button.Content = "O";
+                buttonTR.Content = "O";
                 turn = 0;
             }
 
