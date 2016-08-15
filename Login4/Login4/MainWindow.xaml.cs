@@ -20,17 +20,27 @@ namespace Login4
     /// </summary>
     public partial class MainWindow : Window
     {
-        private int counter = 0;
+        private Button[] arrButtons = new Button[9];
+        // buttons are ordered from 0 as topleft to 8 as buttom right
         public MainWindow()
         {
             InitializeComponent();
         }
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            label.Content = "I have been clicked!" + counter.ToString();
-            counter++;
-            counter++;
+            int turn = 0;
+            if (turn == 0)
+            {
+                button.Content = "X";
+                turn = 1;
+            }
+            else
+            {
+                button.Content = "O";
+                turn = 0;
+            }
+
+
         }
     }
 }

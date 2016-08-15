@@ -7,12 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="55,54,0,0"  Click="button_Click"/>
-        <GroupBox x:Name="groupBox" Header="GroupBox" HorizontalAlignment="Left" Margin="243,69,0,0" VerticalAlignment="Top" Height="139" Width="211">
-            <Button Width="75" Height="33" Margin="68,37,56,47" />
-        </GroupBox>
-        <Label x:Name="label" Content="Something Something" HorizontalAlignment="Left" Margin="108,166,0,0" VerticalAlignment="Top"/>
-
+        <Button x:Name="buttonTL" Content="" HorizontalAlignment="Left" Margin="136,102,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" />
+        <Button x:Name="button1" Content="" HorizontalAlignment="Left" Margin="136,131,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button2" Content="" HorizontalAlignment="Left" Margin="136,156,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button3" Content="" HorizontalAlignment="Left" Margin="136,156,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button4" Content="" HorizontalAlignment="Left" Margin="136,156,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button5" Content="" HorizontalAlignment="Left" Margin="216,102,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button6" Content="" HorizontalAlignment="Left" Margin="216,131,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button7" Content="" HorizontalAlignment="Left" Margin="216,156,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button8" Content="" HorizontalAlignment="Left" Margin="296,102,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button9" Content="" HorizontalAlignment="Left" Margin="296,131,0,0" VerticalAlignment="Top" Width="75"/>
 
 
     </Grid>
