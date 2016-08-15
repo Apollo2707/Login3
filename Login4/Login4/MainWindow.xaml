@@ -11,7 +11,7 @@
         <GroupBox x:Name="groupBox" Header="GroupBox" HorizontalAlignment="Left" Margin="243,69,0,0" VerticalAlignment="Top" Height="139" Width="211">
             <Button Width="75" Height="33" Margin="68,37,56,47" />
         </GroupBox>
-        <Label x:Name="label" Content="Not clicked" HorizontalAlignment="Left" Margin="108,166,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Something Something" HorizontalAlignment="Left" Margin="108,166,0,0" VerticalAlignment="Top"/>
 
 
 
