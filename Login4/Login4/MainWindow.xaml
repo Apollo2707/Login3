@@ -16,6 +16,7 @@
         <Button x:Name="buttonTR" Content="" HorizontalAlignment="Left" Margin="296,102,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
         <Button x:Name="buttonMR" Content="" HorizontalAlignment="Left" Margin="296,131,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
         <Button x:Name="buttonBR" Content="" HorizontalAlignment="Left" Margin="296,157,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Label x:Name="label" Content="" HorizontalAlignment="Left" Height="31" Margin="229,66,0,0" VerticalAlignment="Top" Width="102"/>
 
 
     </Grid>

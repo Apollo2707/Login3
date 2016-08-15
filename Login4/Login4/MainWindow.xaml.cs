@@ -29,21 +29,71 @@ namespace Login4
         {
             InitializeComponent();
         }
+
+        //changes butons to "X" and "O' 
         private void button_Click(object sender, RoutedEventArgs e)
         {
             Button btnThisButton = (Button)sender;
-            btnThisButton.Content = "x";
             if (intTurn == 0)
             {
                 btnThisButton.Content = "X";
+                checker();
                 intTurn = 1;
+                btnThisButton.IsHitTestVisible = false;
             }
             else
             {
                 btnThisButton.Content = "O";
+                checker();
                 intTurn = 0;
+                btnThisButton.IsHitTestVisible = false;
             }
 
+
+        }
+        private void checker()
+        {
+            String winner = "";
+            if (buttonTL.Content == buttonTM.Content && buttonTL.Content == buttonTR.Content && buttonTL.Content.ToString() != "")
+            {
+                winner = buttonTL.Content.ToString();
+                label.Content = winner + " WIN'S";
+            }
+            else if (buttonML.Content == buttonMM.Content && buttonML.Content == buttonMR.Content && buttonML.Content.ToString() != "")
+            {
+                winner = buttonTL.Content.ToString();
+                label.Content = winner + " WIN'S";
+            }
+            else if (buttonBL.Content == buttonBM.Content && buttonBL.Content == buttonBR.Content && buttonBL.Content.ToString() != "")
+            {
+                winner = buttonTL.Content.ToString();
+                label.Content = winner + " WIN'S";
+            }
+            else if (buttonTL.Content == buttonML.Content && buttonTL.Content == buttonML.Content && buttonTL.Content.ToString() != "")
+            {
+                winner = buttonTL.Content.ToString();
+                label.Content = winner + " WIN'S";
+            }
+            else if (buttonTM.Content == buttonMM.Content && buttonTM.Content == buttonBM.Content && buttonTM.Content.ToString() != "")
+            {
+                winner = buttonTL.Content.ToString();
+                label.Content = winner + " WIN'S";
+            }
+            else if (buttonTR.Content == buttonMR.Content && buttonTR.Content == buttonBR.Content && buttonTR.Content.ToString() != "")
+            {
+                winner = buttonTL.Content.ToString();
+                label.Content = winner + " WIN'S";
+            }
+            else if (buttonTL.Content == buttonMM.Content && buttonTL.Content == buttonBR.Content && buttonTL.Content.ToString() != "")
+            {
+                winner = buttonTL.Content.ToString();
+                label.Content = winner + " WIN'S";
+            }
+            else if (buttonBL.Content == buttonMM.Content && buttonBL.Content == buttonTR.Content && buttonBL.Content.ToString() != "")
+            {
+                winner = buttonTL.Content.ToString();
+                label.Content = winner + " WIN'S";
+            }
 
         }
     }
