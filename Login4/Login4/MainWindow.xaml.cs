@@ -20,9 +20,16 @@ namespace Login4
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int counter = 0;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            label.Content = "I have been clicked!" + counter.ToString();
+            counter++;
         }
     }
 }
